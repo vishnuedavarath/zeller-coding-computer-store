@@ -22,7 +22,7 @@ export class Products {
   }
 
   // Get the product catalogue
-  public getCatalogue() {
+  public getCatalogue(): Catalogue {
     return this.catalogue;
   }
 }

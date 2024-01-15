@@ -82,7 +82,7 @@ export class Offers {
   }
 
   // Apply offers those are eligible for each products in the order
-  public applyOffers(checkoutOrder: CheckoutOrder) {
+  public applyOffers(checkoutOrder: CheckoutOrder): CheckoutOrder {
     // Find the offers elgible by products for the given order
     const eligibleOffersByProduct: EligibleOffersByProduct =
       this.findOffers(checkoutOrder);
