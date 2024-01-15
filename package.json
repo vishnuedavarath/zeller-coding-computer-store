@@ -1,0 +1,44 @@
+{
+  "name": "computer-store",
+  "version": "1.0.0",
+  "description": "Zeller Coding Challenge",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npx tsc",
+    "test": "jest"
+  },
+  "author": "Vishnu U",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "@types/node": "^8.10.45",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "24.7.1",
+    "ts-jest": "24.0.2",
+    "ts-loader": "5.3.3"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "/dist"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/test/*.spec.(js|ts)"
+    ]
+  }
+}
